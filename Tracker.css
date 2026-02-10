@@ -1,3 +1,72 @@
-.favicon {
-    border-radius: 45px;
+/* .header{
+    display: flex;
+    gap:400px;
+    background-color: lightblue;
+    margin: 0;
+    
 }
+
+
+
+.navBar {
+    display: flex;
+    gap:20px;
+}
+
+
+
+img {
+    border-radius: 45%;
+    height: 40px;
+    width: 40px;
+    padding: 30px;
+
+}
+
+div nav li {
+    list-style: none;
+}
+
+.left {
+    display: flex;
+
+}
+ */
+
+ .header {
+    display: flex;
+    background-color: rgb(100, 117, 146)  ;
+    align-items: center;
+    justify-content:space-between;
+    margin: 0;
+ }
+
+  .left{
+    display: flex;
+    align-items: center;
+    gap:6px;
+ }
+
+ .header .left img{
+    height: 50px;
+    width: 50px;
+    border-radius: 8px;
+ }
+
+ .header .left h2 {
+    text-decoration: white;
+ }
+
+
+ nav ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    align-items: end;
+    text-decoration: white;
+ }
+
+ main{
+    height: 80vh;
+    background-color: rgb(173, 193, 108);
+ }
