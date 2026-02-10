@@ -38,6 +38,7 @@ div nav li {
    margin: 0;
  }
 
+
  .header {
     display: flex;
     background-color: rgb(100, 117, 146)  ;
@@ -76,4 +77,8 @@ div nav li {
  main{
     height: 89vh;
     background-color: rgb(173, 193, 108);
+ }
+
+  h1{
+   margin: 0;
  }
