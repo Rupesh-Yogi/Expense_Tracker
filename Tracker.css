@@ -33,81 +33,147 @@ div nav li {
 }
  */
 
- *{
-   font-family: Arial, sans-serif;
- }
+* {
+  font-family: Arial, sans-serif;
+}
 
- body {
-   padding: 0;
-   margin: 0;
- }
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+.header {
+  display: flex;
+  background-color: rgb(100, 117, 146);
+  align-items: center;
+  justify-content: space-between;
+  /* margin: 0; */
+  padding: 0 22px;
+  height: 77px;
+}
 
- .header {
-    display: flex;
-    background-color: rgb(100, 117, 146)  ;
-    align-items: center;
-    justify-content:space-between;
-    /* margin: 0; */
-    padding: 0 22px;
-    height: 77px;
- }
+.left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 
-  .left{
-    display: flex;
-    align-items: center;
-    gap:6px;
- }
+.header .left img {
+  height: 50px;
+  width: 50px;
+  border-radius: 8px;
+}
 
- .header .left img{
-    height: 50px;
-    width: 50px;
-    border-radius: 8px;
- }
+.header .left h2 {
+  color: white;
+  font-weight: bold;
+}
 
- .header .left h2 {
-    color: white;
-    font-weight:bold;
- }
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+  /* align-items: center; */
+  color: white;
+  font-weight: bold;
+}
 
+main {
+  height: 89vh;
+  background-color: rgb(173, 193, 108);
+}
 
- nav ul{
-    display: flex;
-    list-style: none;
-    gap: 15px;
-    /* align-items: center; */
-    color: white;
- }
+h1 {
+  margin: 0;
+}
 
- main{
-    height: 89vh;
-    background-color: rgb(173, 193, 108);
- }
+.text {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
 
-  h1{
-   margin: 0;
+.title {
+  color: rgb(33, 138, 33);
+}
 
- }
+.text h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
 
- .text {
-   /* text-align: center; */
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   padding: 80px 0;
- }
+.text h3 {
+  font-size: 25px;
+}
 
- .title {
-   color: rgb(33, 138, 33);
-   font-style:;
- }
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 8px;
+  margin: -65px;
 
- .text h1 {
-   font-weight: bold;
-   font-size: 50px;
- }
+}
 
- .text h3 {
-   font-size: 25px;
- }
+.gitbtn:hover, .navigate:hover{
+    transform: translateY( -3px);
+}
+
+.gitbtn {
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.navigate {
+  height: 50px;
+  background-color: green;
+  color: white;
+  border-radius: 8px;
+  width: 150px;
+  cursor: pointer;
+   transition: transform 0.2s ease;
+}
+
+.floatingbuttons {
+  height: 200px;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.card:hover {
+  transform: translate(-10px, -15px) scale(1.05);
+}
+
+.card {
+  border: 2px solid rgb(159, 179, 45);
+  height: 94px;
+  width: 120px;
+  background-color: rgb(180, 199, 120);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.floatingbuttons div h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+}
+
+.sspage
