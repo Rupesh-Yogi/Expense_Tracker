@@ -44,8 +44,8 @@ nav ul {
   font-weight: bold;
 }
 
-main {
-  height: 89vh;
+.firstpage   {
+  height: 87vh;
   background-color: rgb(173, 193, 108);
 }
 
@@ -141,6 +141,29 @@ h1 {
   font-size: 30px;
 }
 
-.sspage{
-  height: 110vh;
+.AboutPage{
+  height: 80vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding:0 40px;
+}
+
+.Aboutright img {
+  height: 25rem;
+  width: 40rem ;
+}
+
+.tags {
+display: flex;
+gap: 15px;
+
+}
+
+.tags a {
+  background-color: rgb(198, 247, 190);
+  /* height: 30px;
+  width: 90px; */
+  border-radius: 8px;
 }
