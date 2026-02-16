@@ -147,6 +147,15 @@ h1 {
   align-items: center;
   gap: 10px;
   padding: 0 40px;
+  background-color: bisque;
+}
+
+.Aboutleft h2 {
+  font-size: 30px;
+}
+
+.para {
+  opacity: 0.7;
 }
 
 .Aboutright img {
@@ -162,9 +171,36 @@ h1 {
 
 .tags a {
   background-color: rgb(198, 247, 190);
-height: 18px;
-    width: 112px;
-    padding: 6px 0px;
-  border-radius:18px;;
+  height: 18px;
+  width: 112px;
+  padding: 6px 0px;
+  border-radius: 18px;
+  ;
   text-align: center;
+}
+
+.Features {
+  height: 95vh;
+  /* background-color: rgb(218, 193, 135); */
+}
+
+.Features h1 {
+  /* display: grid;
+  justify-content: center; */
+  text-align: center;
+  padding: 100px 0;
+}
+
+.StyleFeature {
+  display: grid;
+  grid-template-columns: 450px 450px 450px;
+  grid-template-rows: 200px 200px 200px;
+  gap: 30px;
+  justify-content: center;
+
+}
+
+.FeatureCard {
+  border: 2px solid blue;
+
 }
