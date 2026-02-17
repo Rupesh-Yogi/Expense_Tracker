@@ -180,15 +180,15 @@ h1 {
 }
 
 .Features {
-  height: 95vh;
-  /* background-color: rgb(218, 193, 135); */
+  height: 135vh;
+  background-color: rgb(212, 204, 186);
 }
 
 .Features h1 {
   /* display: grid;
   justify-content: center; */
   text-align: center;
-  padding: 100px 0;
+  padding: 100px 0 40px 0;
 }
 
 .StyleFeature {
@@ -201,6 +201,33 @@ h1 {
 }
 
 .FeatureCard {
-  border: 2px solid blue;
+  border: 2px solid rgba(239, 230, 230, 0.799);
+  border-radius: 10px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  box-shadow: -4px 5px 11px -5px ;
+}
 
+
+
+
+
+.FeatureCard p {
+  padding: 0 30px;
+}
+
+.FeatureCard h3 {
+    padding: 0 30px;
+
+}
+
+.seventhCard{
+  grid-column: 2/3;
+}
+
+.ssPage{
+  height:100vh;
+  
 }
