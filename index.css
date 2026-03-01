@@ -1,0 +1,220 @@
+* {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(100, 117, 146);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22px;
+  height: 77px;
+  width: 100%;
+  /* position:sticky; */
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.header .left img {
+  height: 50px;
+  width: 50px;
+  border-radius: 8px;
+}
+
+.header .left h2 {
+  color: white;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+.firstpage {
+  min-height: 89vh;
+  background-color: rgb(173, 193, 108);
+}
+
+h1 {
+  margin: 0;
+}
+
+.text {
+  display: flex; 
+  flex-direction: column;  
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  padding-top: 80px;
+}
+
+.title {
+  color: rgb(33, 138, 33);
+}
+
+.text h1 {
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+
+.text h3 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 8px;
+  /* margin: -65px 0; */
+
+}
+
+.gitbtn:hover, .navigate:hover {
+  transform: translateY(-3px);
+  box-shadow: 8px 7px 12px -2px rgb(90 142 94);
+
+}
+
+.gitbtn {
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.5s ease, box-shadow 0.2s ease;
+}
+
+.navigate {
+  height: 50px;
+  background-color: green;
+  color: white;
+  border-radius: 8px;
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.floatingbuttons {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.card:hover {
+  transform: translate(-8px, -8px) scale(1.05);
+}
+
+.card {
+  border: 2px solid rgb(159, 179, 45);
+  height: 94px;
+  width: 120px;
+  background-color: rgb(180, 199, 120);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.floatingbuttons div h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+/* For Responsiveness */
+
+
+@media(max-width:745px) {
+
+  /* For navbar */
+
+  .right {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .right.active {
+    display: block;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(173, 193, 108);
+    top: 77px;
+    left: 0;
+
+  }
+
+
+  .right nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .right nav ul li {
+    color: black;
+    border-radius: 8px;
+    background-color: rgb(204, 221, 152);
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+
+  }
+
+  .text.active {
+    display: none;
+  }
+
+
+}
+
+/* For buttons */
+
+@media (max-width:640px) {
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .floatingbuttons {
+    flex-wrap: wrap;
+  }
+
+}
