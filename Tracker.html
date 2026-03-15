@@ -8,6 +8,8 @@
   <link class="favicon" rel="icon" href="/Img/credit-card-in-wallet-with-coins-on-blue-background.webp" />
   <link rel="stylesheet" href="/Tracker.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- <link rel="stylesheet" href="/CssForTracker.css"> -->
+  <script src="/Tracker.js" defer> </script>
 
 </head>
 
@@ -22,13 +24,16 @@
       <nav>
         <!-- <button class="search">Search</button> -->
         <ul>
-          <li>Overview</li>
-          <li>Features</li>
-          <li>Screenshots</li>
-          <li>Contribute</li>
+          <li><a href="#AboutPage">Overview</a></li>
+          <li><a href="#Features">Features</a></li>
+          <li><a href="#Screenshots">Screenshots</a></li>
+          <li><a href="#Contribute">Contribute</a></li>
         </ul>
       </nav>
     </div>
+
+    <button class="menu-icon">☰</button>
+
   </header>
 
   <main>
@@ -62,10 +67,10 @@
           <p>Contributors</p>
         </div>
       </div>
-
+      
     </div>
 
-    <div class="AboutPage">
+    <div class="AboutPage" id="AboutPage">
 
       <div class="Aboutleft">
         <h2>About Incomex</h2>
@@ -94,7 +99,7 @@
       </div>
     </div>
 
-    <div class="Features">
+    <div class="Features" id="Features">
       <h1>All Features</h1>
 
       <div class="StyleFeature">
@@ -141,7 +146,7 @@
       </div>
     </div>
 
-    <section class="Screenshots">
+    <section class="Screenshots" id="Screenshots">
 
       <h2>Screenshots</h2>
 
@@ -163,7 +168,7 @@
       </div>
     </section>
 
-    <section class="Contribute">
+    <section class="Contribute" id="Contribute">
 
       <div class="left">
 
@@ -211,22 +216,6 @@
       </div>
     </section>
 
-    <!-- <section class="footer">
-      <div class="fleft">
-        <img src="/Img/credit-card-in-wallet-with-coins-on-blue-background.webp" />
-        <h2>R's Incomex</h2>
-      </div>
-
-       <div class="prg">
-        <p>Personal daily income and expense tracker based on Laravel Filament.</p>
-       </div>       
-
-
-      <div class="fright">
-        <img src="/Img/New-IMAGE.png" alt="GitHub icon">
-      </div>
-
-    </section> -->
 
 
     <section class="footer">

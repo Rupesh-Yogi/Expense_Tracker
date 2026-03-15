@@ -1,5 +1,6 @@
 * {
   font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -9,14 +10,19 @@ body {
 }
 
 .header {
+  position: fixed;
   display: flex;
   background-color: rgb(100, 117, 146);
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between;  /* -------------------layout breaker --------------------*/
   padding: 0 22px;
   height: 77px;
-  /* position:fixed; */
+  box-sizing: border-box;
+  width: 100%;
+ 
 }
+
+
 
 .left {
   display: flex;
@@ -39,18 +45,79 @@ nav ul {
   display: flex;
   list-style: none;
   gap: 35px;
-  color: white;
-  font-weight: bold;
+  font-weight: bold; 
+}
+
+
+nav ul li a {
+color: white ;
+text-decoration: none;
+transition: 0.3s;
+}
+
+nav ul li a:hover{
+  color: #16a34a;
 }
 
 
 
+.menu-icon {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: white;
+  display: none;
+}
+
+
+@media (max-width:768px) {
+
+  .right {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .right.active {
+    display: block;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(173, 193, 108);
+    top: 77px;
+    left: 0;
+
+  }
+
+
+  .right nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .right nav ul li {
+    font-size: 25px;
+    color: black;
+    border-radius: 8px;
+    background-color: rgb(204, 221, 152);
+    width: 100%;
+    padding: 15px;
+  }
+
+}
 
 
 .firstpage {
-  height: 89vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: rgb(173, 193, 108);
 }
+
 
 h1 {
   margin: 0;
@@ -62,7 +129,9 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 80px 0;
+  
 }
+
 
 .title {
   color: rgb(33, 138, 33);
@@ -213,7 +282,7 @@ h1 {
 
 .icons {
   padding: 17px 31px;
-  font-size :30px;
+  font-size: 30px;
   color: green;
 }
 
@@ -230,7 +299,7 @@ h3 {
 
 .Screenshots {
   background-color: rgb(154, 220, 220);
-    height:135vh;
+  height: 135vh;
 }
 
 
@@ -244,7 +313,7 @@ h3 {
 figure img {
   height: 100%;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 8px;  
 }
 
 
@@ -274,53 +343,54 @@ figcaption {
 }
 
 
- 
+
 .Contribute .left {
   background-color: aliceblue;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 50%;
-  /* height: 100%; confuse : why 100% height is creating space */  
+  height: 100%; /* confuse : why 100% height is creating space */
 }
 
-.contributeText hr{
-  margin:0 ;
+.contributeText hr {
+  margin: 0;
   opacity: 0.3;
 }
 
 .contributeText {
   display: flex;
   flex-direction: column;
-  margin:30px;
+  margin: 30px;
   height: fit-content;
 }
 
-.iElement{
+.iElement {
   margin-left: 0;
 }
 
 
-.firsti, .secondi{
+.firsti,
+.secondi {
   display: flex;
 }
 
-.Contribute .right{
-display: flex;
-width: 50%;
-flex-direction: column;
-align-items: left;
+.Contribute .right {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: left;
 }
 
 .Contribute .right ol {
- display: flex;
-flex-direction: column;
-gap:25px;
-margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 0 10px;
 }
 
 .Contribute .right h2 {
-  margin:  30px 50px;
+  margin: 30px 50px;
 }
 
 .steps {
@@ -334,7 +404,7 @@ margin: 0 10px;
 
 .steps li::before {
   content: counter(num);
-  background-color:#16a34a ;
+  background-color: #16a34a;
   width: 25px;
   height: 25px;
   display: inline-flex;
@@ -352,8 +422,8 @@ margin: 0 10px;
   margin: 50px;
   height: 50px;
   border-radius: 8px;
-  color:white;
-  font-weight:600;
+  color: white;
+  font-weight: 600;
 }
 
 
@@ -378,17 +448,20 @@ margin: 0 10px;
   align-items: center;
 }
 
-.footerIcon{
-  height:50px;
+.firstel img, .fright img {
+  border-radius: 8px;
+}
+
+.footerIcon {
+  height: 50px;
   width: 50px;
 }
 
 .lowerFooter hr {
-  margin:30px;
+  margin: 30px;
   opacity: 0.3;
 }
 
 .lowerFooter p {
   text-align: center;
 }
-
